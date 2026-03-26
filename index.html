@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+    <h2 class="logo">Prathamesh</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Hello, I'm <span>Prathamesh Surve</span></h1>
+        <h2 class="typing"></h2>
+        <p>Building modern web applications</p>
+
+        <div class="buttons">
+            <button onclick="scrollToSection('projects')">View Work</button>
+            <button class="btn-outline" onclick="scrollToSection('contact')">Contact Me</button>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="/images/profile-pic.png" alt="profile">
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="about">
+    <h2>About Me</h2><br>
+    <div class="about-card">
+    <p>Aspiring Full Stack Developer with knowledge of Java, MERN stack, and modern web technologies.</p>
+    <p>Skilled in building responsive web applications using HTML, CSS, JavaScript, React, and backend technologies.</p>
+    <p>Interested in creating scalable web solutions and continuously learning new technologies.</p>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="skills">
+    <h2>My Skills</h2>
+
+    <div class="skills-container">
+
+        <!-- Frontend -->
+        <div class="skill-card">
+            <h3>Frontend</h3>
+            <div class="icons">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">
+                <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png">
+            </div>
+            <p>HTML, CSS, JavaScript, React</p>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-card">
+            <h3>Backend</h3>
+            <div class="icons">
+                <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png">
+                <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png">
+            </div>
+            <p>Node.js, Express.js</p>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-card">
+            <h3>Database</h3>
+            <div class="icons">
+                <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png">
+            </div>
+            <p>MySQL</p>
+        </div>
+
+        <!-- Programming -->
+        <div class="skill-card">
+            <h3>Programming</h3>
+            <div class="icons">
+                <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png">
+            </div>
+            <p>Java</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="projects">
+    <h2>My Projects</h2>
+
+    <div class="card">
+        <h3>Student Management System</h3>
+        <p>Full stack project using Java, MySQL</p>
+    </div>
+
+    <div class="card">
+        <h3>GYM website</h3>
+        <p>Web-based gym management system</p>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Let's connect and build something amazing 🚀</p>
+
+<div class="contact-icons">
+
+    <!-- GitHub -->
+    <a href="https://github.com/Prathamesh152005" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://linkedin.com/in/prathamesh-surve-a57268346" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn">
+    </a>
+
+    <!-- Gmail -->
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=prathamsurve191@gmail.com" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail">
+    </a>
+
+</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

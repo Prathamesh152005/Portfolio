@@ -11,16 +11,59 @@ body {
 
 /* Navbar */
 header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background: #020617;
+    align-items: center;
+
+    padding: 15px 50px;
+
+    background: rgba(2, 6, 23, 0.8);
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #38bdf8;
+    letter-spacing: 1px;
+}
+
+/* Nav links */
 nav a {
-    margin: 0 10px;
+    position: relative;
+    margin: 0 15px;
     color: white;
     text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Hover color */
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Underline animation */
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #38bdf8;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
 }
 
 /* Hero */
